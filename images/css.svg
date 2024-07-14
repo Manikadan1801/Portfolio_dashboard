@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.05 80">
+  <path d="M67.52,0H14.53C6.51,0,0,6.51,0,14.53v50.94c0,8.02,6.51,14.53,14.53,14.53h52.99c8.02,0,14.53-6.51,14.53-14.53V14.53c0-8.02-6.51-14.53-14.53-14.53Z" style="fill: #001e36; stroke-width: 0px;"/>
+  <g id="layer1">
+    <polygon id="polygon2989" points="63.07 15 59.05 59.99 41 65 22.99 60 18.98 15 63.07 15" style="fill: #264de4; stroke-width: 0px;"/>
+    <polygon id="polygon2991" points="41.03 61.17 55.61 57.13 59.05 18.68 41.03 18.68 41.03 61.17" style="fill: #2965f1; stroke-width: 0px;"/>
+    <polygon id="polygon2993" points="41.03 35.37 28.18 35.37 28.67 40.89 41.03 40.89 41.03 35.37" style="fill: #ebebeb; stroke-width: 0px;"/>
+    <polygon id="polygon2995" points="41.03 24.2 41.01 24.2 27.19 24.2 27.69 29.72 41.03 29.72 41.03 24.2" style="fill: #ebebeb; stroke-width: 0px;"/>
+    <polygon id="polygon2997" points="28.92 43.65 29.69 52.32 41 55.45 41.03 55.45 41.03 49.7 41 49.71 34.85 48.05 34.46 43.65 31.47 43.65 28.92 43.65" style="fill: #ebebeb; stroke-width: 0px;"/>
+    <polygon id="polygon3005" points="47.8 40.89 47.16 48.05 41.01 49.71 41.01 55.45 52.32 52.32 52.4 51.38 53.7 36.85 53.84 35.37 54.83 24.2 41.01 24.2 41.01 29.72 48.78 29.72 48.28 35.37 41.01 35.37 41.01 40.89 47.8 40.89" style="fill: #fff; stroke-width: 0px;"/>
+  </g>
+</svg>
