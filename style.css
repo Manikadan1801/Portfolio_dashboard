@@ -66,9 +66,7 @@ main {
   /* border-bottom: 2px solid rgb(116, 116, 116); */
 }
 
-p,
-h2,
-h1 {
+#Intro>p h2 h1 {
   opacity: 0;
 }
 
@@ -99,4 +97,71 @@ h1 {
 
   /* Reflection effect */
   -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.054));
+}
+
+.line {
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer-1 {
+  background-color: #000000;
+  color: #F5F8FF;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 2px;
+  background-color: #084BDA;
+}
+
+.contact {
+  background-image: url("images/contact-bg.svg");
+  color: white;
+}
+
+.form {
+  height: 48px;
+  padding: 10px;
+  border: 1px solid #8AA7FF;
+  background-color: #ffffff15;
+  /* Semi-transparent white */
+  backdrop-filter: blur(10px);
+  /* Applies the blur effect to the area behind the input */
+  color: #ffffff;
+  /* Text color */
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.phone {
+  width: 96% !important;
+}
+
+.message {
+  height: 100px;
+}
+
+.highlight-contact {
+  color: #FFE4C9;
+}
+
+.line-1 {
+  position: relative;
+  padding-left: 20px;
+}
+
+.line-1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 2px;
+  background-color: #FFE4C9;
 }
