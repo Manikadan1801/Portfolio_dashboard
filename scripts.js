@@ -14,6 +14,13 @@ $(document).ready(function () {
     this.classList.add('active')
   });
 
+  $('.nav-parent > a').click(function () {
+    document.querySelectorAll('.nav-parent > a').forEach(function (item) {
+      item.classList.remove('active')
+    })
+    this.classList.add('active')
+  });
+
 
   // this for progrees bar animation
   function animateListItems() {
