@@ -17,13 +17,7 @@ header {
   position: relative;
   align-items: center;
   justify-content: center;
-  /* height:86vh; */
   height: 100vh;
-}
-
-header img {
-  width: 800px;
-  margin-bottom: -6rem;
 }
 
 main {
@@ -101,7 +95,7 @@ main {
 
 .line {
   position: relative;
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 
 .footer-1 {
@@ -121,20 +115,19 @@ main {
 
 .contact {
   background-image: url("images/contact-bg.svg");
+  background-size: cover;
   color: white;
 }
 
 .form {
   height: 48px;
-  padding: 10px;
-  border: 1px solid #8AA7FF;
-  background-color: #ffffff15;
+  border: 1px solid #8AA7FF !important;
+  background-color: #ffffff15 !important;
   /* Semi-transparent white */
   backdrop-filter: blur(10px);
   /* Applies the blur effect to the area behind the input */
-  color: #ffffff;
+  color: #ffffff !important;
   /* Text color */
-  font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   outline: none;
 }
