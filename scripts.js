@@ -51,6 +51,6 @@ $(document).ready(function () {
   }
 
 
-  observer.observe($("#anim")[0]);
+  observer.observe($("#Intro")[0]);
 
 });
