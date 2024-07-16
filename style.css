@@ -49,12 +49,12 @@ main {
   transition: 0.1s all ease-in-out;
 }
 
-.header-right-nav>a.active {
+.active {
   cursor: pointer;
+  font-weight: 500 !important;
   text-shadow: 0px 0px 0.5px #001a2c;
 }
-
-.header-right-nav>a:not(.active):hover {
+.active:hover {
   cursor: pointer;
   text-shadow: 0px 0px 0.5px #000000;
   /* border-bottom: 2px solid rgb(116, 116, 116); */
