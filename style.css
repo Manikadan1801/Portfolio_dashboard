@@ -49,12 +49,13 @@ main {
   transition: 0.1s all ease-in-out;
 }
 
-.header-right-nav>a.active {
+.active {
   cursor: pointer;
+  font-weight: 500;
   text-shadow: 0px 0px 0.5px #001a2c;
 }
 
-.header-right-nav>a:not(.active):hover {
+.active:hover {
   cursor: pointer;
   text-shadow: 0px 0px 0.5px #000000;
   /* border-bottom: 2px solid rgb(116, 116, 116); */
@@ -63,36 +64,6 @@ main {
 #Intro>p h2 h1 {
   opacity: 0;
 }
-
-.reflect-button {
-  /* -webkit-box-reflect: below 1px liner-gradient(transparent, #0005);
-  box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,
-    0 0 25px #03e9f4, 0 0 100px #03e9f4; */
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-
-  /* Reflection effect */
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
-
-}
-
-.reflect-button:hover {
-  background-color: #45a049;
-}
-
-.reflect-image {
-  height: auto;
-
-  /* Reflection effect */
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.054));
-}
-
 .line {
   position: relative;
   padding-left: 20px !important;
