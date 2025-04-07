@@ -21,19 +21,6 @@ $(document).ready(function () {
     this.classList.add('active')
   });
 
-
-  // this for progrees bar animation
-  function animateListItems() {
-    var widths = ['80%', '95%', '95%', '55%', '90%', '25%'];
-    $("li .progress-bar").each(function (index) {
-      var widthIndex = index % widths.length;
-      console.log(index);
-      $(this).animate({
-        width: widths[widthIndex]
-      }, 1000);
-    });
-  }
-
   const observerConfig = {
     rootMargin: '-50% 0% -50% 0%',
     threshold: 0
