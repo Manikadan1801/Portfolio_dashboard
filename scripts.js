@@ -1,50 +1,29 @@
-$(document).ready(function () {
+const body = document.querySelector('body');
+const sidebar = document.querySelector('.sidebar');
+const toggle = document.querySelector('.toggle');
+const search = document.querySelector('.search-box');
+const modeSwitch = document.querySelector('.toggle-switch');
+const modeText = document.querySelector('.mode-text');
+const navLinks = document.querySelectorAll('.nav-links');
 
-  // this for top nav bar
-  var divWidth = $('#nav').width();
-  if (divWidth > 960) {
-    $('#navp').addClass('p-fixed');
+toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('close');
+});
+
+modeSwitch.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  if (body.classList.contains('dark')) {
+      modeText.innerText = 'Dark mode';
+      
+  } else {
+      modeText.innerText = 'Light mode';
   }
+});
 
-  // this for work section tabs
-  $('.header-right-nav > a').click(function () {
-    document.querySelectorAll('.header-right-nav > a').forEach(function (item) {
-      item.classList.remove('active')
-    })
-    this.classList.add('active')
-  });
-
-  $('.nav-parent > a').click(function () {
-    document.querySelectorAll('.nav-parent > a').forEach(function (item) {
-      item.classList.remove('active')
-    })
-    this.classList.add('active')
-  });
-
-  const observerConfig = {
-    rootMargin: '-50% 0% -50% 0%',
-    threshold: 0
-  }
-
-  let observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateListItems();
-        textAnimation();
-        observer.disconnect();
-        console.log('intersecting')
-      }
+navLinks.forEach(link => {
+    console.log(link);
+    link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
     });
-  }, observerConfig);
-
-  function textAnimation() {
-    $("p, h2, h1").css({
-      "opacity": "1",
-      "transition": "opacity 1s"
-    });
-  }
-
-
-  observer.observe($("#Intro")[0]);
-
 });

@@ -1,233 +1,350 @@
-body {
-  font-family: Poppins, sans-serif;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --primary-color: #613DC1;
+  --secondary-color: #e8e9ff;
+  --background-color: #E4e9f7;
+  --sidebar-color:#fff;
+  --toggle-color: #68678f;
+  --text-color: #69696d;
+  --font-family: 'Poppins', sans-serif;
+  --Light-main-text:#000;
+
+  /* Transition */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body{
+  font-family: var(--font-family);
+  height: 100vh;
+  background: var(--background-color);
+  transition: var(--tran-03);
+}
 
+body.dark{
+  --primary-color: #3a3b3c;
+  --secondary-color: #3a3b3c;
+  --background-color: #18191a;
+  --sidebar-color:#242526;
+  --toggle-color: #fff;
+  --text-color: #a1a1a1;
+  --font-family: 'Poppins', sans-serif;
+ 
 }
-p{
-  font-size:1.2rem;
-  line-height: 1.5;
+/* Global Styles */
+
+
+/* SideBar */
+.sidebar{
+  width:250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 14px;
+  background: var(--sidebar-color);
+  transition: var(--tran-05);
+  z-index: 10;
 }
-.top {
-  background: linear-gradient(177deg, #edf0fe, transparent);
+
+.close{
+  width:90px;
 }
-header {
+
+.sidebar .text{
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
+  color: var(--text-color);
+  transition: var(--tran-03);
+}
+
+.sidebar .header-text{
+  font-size: 16px;
+}
+.name{
+  color: var(--Light-main-text);
+}
+
+.dark .name{
+  color: var(--toggle-color);
+}
+
+.close .text{
+  opacity: 0;
+}
+
+.sidebar .image{
+  min-width: 60px;
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  transition: var(--tran-05);
 }
 
-main {
-  background-color: inherit;
-}
-
-.introduction .profile {
-  width: auto;
-  height: 450px;
-  background-color: #000000 !important;
-}
-.hero-intro{
-  margin: 6rem;
-}
-.hero-text, .hello-text p{
-  width: 100%;
-  /* font-family: ui-serif; */
-  font-size: 3.125rem !important;
-  font-weight: 450;
-  line-height: 1.3;
-  color: #303030;
-}
-
-
-b{
-  color: #000000;
-  font-weight: 600;
-}
-.hero-par{
-  font-size: 1.4rem ;
-  color: #666666;
-  line-height: 1.5;
-}
-.icon {
-  width: 45px;
-}
-
-.header-right-nav>a {
-  text-decoration: none;
-  color: black;
-  transition: 0.1s all ease-in-out;
-}
-
-.active {
-  cursor: pointer;
-  text-shadow: 0px 0px 0.5px #001a2c;
-}
-
-.active:hover {
-  cursor: pointer;
-  text-shadow: 0px 0px 0.5px #000000;
-  /* border-bottom: 2px solid rgb(116, 116, 116); */
-}
-
-.footer-1 {
-  background-color: #000000;
-  color: #F5F8FF;
-}
-
-
-.section__label {
-  font-size: .75rem;
-  color: #0373f4;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: .375rem;
-}
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-  transition: transform cubic-bezier(0.31, 0.48, 0.53, 0.83) .3s;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.text-overlay {
-  background-color: #0026ffad; /* Semi-transparent background */
-  color: white;
+.sidebar li{
+  height: 40px;
+  margin-top: 10px;
+  list-style: none;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-align: start;
-  opacity: 0; /* Initially hidden */
+  align-items: center;
+}
+
+.sidebar li .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 65px;
+  font-size: 20px;
+}
+
+.sidebar li .icon,
+.sidebar li .text{
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+  color: var(--primary-color);
+}
+
+.dark .sidebar li a:hover .icon,
+.dark .sidebar li a:hover .text{
+  color: var(--toggle-color);
+}
+
+.sidebar header{
+  position: relative;
+}
+
+.sidebar .image-text img{
+  width:40px;
+  height: 40px;
+  border-radius: 50px;
+  border: var(--primary-color) 1px solid;
+}
+
+.sidebar header .image-text{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+header .image-text .header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text .name{
+  font-weight:800;
+}
+
+.header-text .profession{
+  margin-top: -2px;
+  font-size: 14px;
+}
+
+.sidebar header .toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  background: var(--primary-color);
+  position: absolute;
+  top: 40%;
+  right: -25px;
+  transform: translateY(-50%) rotate(180deg);
+  transition: var(--tran-03);
+}
+
+.sidebar.close header .toggle{
+  color: var(--secondary-color);
+  transform: translateY(-50%);
+  
+}
+
+.dark .sidebar header .toggle{
+  color: var(--text-color);
+}
+
+.sidebar li a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
-  line-height: normal;
+  border-radius: 4px;
+  transition: var(--tran-05);
+}
+
+.active{
+  background: var(--secondary-color);  
+  border-radius: 6px;
+}
+
+.active .icon,
+.active .text{
+  color: var(--primary-color) !important;
+}
+
+.dark .active .icon,
+.dark .active .text{
+  color: var(--toggle-color) !important;
+}
+
+/* .dark .sidebar li a:hover{
+  /* border: var(--text-color) 1px solid; */
+} */
+
+.sidebar .search-box{
+  border-radius: 6px;
+  background: var(--secondary-color);
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.sidebar .menu-bar{
+  height:calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.menu-links{
+  margin-top: 50px;
+}
+.menu-bar .mode{
+  position: relative;
+  border-radius: 6px;
+  background: var(--secondary-color);
+  height: 60px;
+  transition: var(--tran-03);
+}
+
+.mode-text{
+  margin-left: 8px;
+}
+
+.menu-bar .mode .moon-sun{
+ height: 40px;
+ width: 40px;
+ margin-left: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.menu-bar .mode i{
+ position: absolute;
+}
+
+.menu-bar .mode .moon{
+  opacity: 0;
+}
+
+.slidebar .mode .mode-text,
+.slidebar .mode .icon {
+  color: var(--Light-main-text) !important;
+}
+
+.dark .menu-bar .mode .sun{
+  opacity: 0;
+}
+
+.dark .menu-bar .mode .moon{
+  opacity: 1;
+}
+
+.dark .mode .mode-text,
+.dark .mode .icon {
+  color: var(--toggle-color);
+}
+
+
+.menu-bar .mode .toggle-switch{
   position: absolute;
-  bottom: 25px; /* Starting position */
-  left: 0px; /* Starting position */
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  transform: translateY(30px) scale(1); /* Start off below */
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  right: 10px;
+  display: flex;
+  height: 100%;
+  min-width: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.close .mode{
+  display: flex;
+  align-items: center;
+  background: none;
 }
 
-.image-container:hover .text-overlay {
-  padding: 25px;
-  opacity: 1; /* Make text visible on hover */
-  box-shadow: 0px 9px 30px rgba(0, 0, 0, .21);
-  transform: translateY(0) scale(0.98); /* Slide text into place and scale */
-  bottom: 0px; /* New position */
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+.close .menu-bar .mode .toggle-switch{
+  right: -3px;
+  border-radius: 6px;
+  padding:0 10px 0 10px;
 }
 
-.image-container:hover{
-  box-shadow: 0px 9px 30px rgba(0, 0, 0, .21);
-  transform: scale(1.02);
-  transition: transform cubic-bezier(0.31, 0.48, 0.53, 0.83) .5s;
+.toggle-switch .switch{
+  position: relative;
+  background: var(--toggle-color);
+  width: 50px;
+  height: 28px;
+  border-radius: 25px;
+  z-index: 2;
 }
 
-.hello-text {
-  font-size: 3rem !important;
-  display: inline-block;
-  overflow: hidden;
-  width: 0;
-  animation: typingHello 3s steps(18) 1s forwards, blink 0.75s step-end infinite;
-  white-space: nowrap;
-  border-right: 4px solid #444444; /* Cursor effect */
-  white-space: nowrap;
+.switch::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  height: 15px;
+  width: 15px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--sidebar-color);
+  transition: var(--tran-05);
 }
 
-/* Typing animation for "I'm Manikandan" */
-.name-text {
-  font-size: 3rem !important;
-  display: inline-block;
-  overflow: hidden;
-  width: 0;
-  animation: typingName 3s steps(15) 4s forwards, blink 0.75s step-end infinite;
-  white-space: nowrap;
-  border-right: 4px solid #333; /* Cursor effect */
+body.dark .switch::before{
+  left:30px
 }
 
-/* Typing animation for "Hello and welcome!" */
-@keyframes typingHello {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 17ch;
-  }
+.home{
+  position: relative;
+  left: 250px;
+  padding: 20px 30px;
+  width:calc(100% - 250px);
+  height: 100vh;
+  transition: var(--tran-05);
 }
 
-/* Typing animation for "I'm Manikandan" */
-@keyframes typingName {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 15ch;
-    
-  }
+.home .text{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
-@keyframes hideCursorHello {
-  0% {
-    border-right: 4px solid #333;
-  }
-  100% {
-    border-right: none;
-  }
-}
-
-@keyframes hideCursorName {
-  0% {
-    border-right: 4px solid #333;
-  }
-  100% {
-    border-right: none;
-  }
-}
-
-/* Blinking cursor effect */
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: #333;
-  }
-}
-@media (min-width: 768px) {
-  .hello-text {
-    animation: typingHello 3s steps(20) 1s forwards, blink 0.75s step-end infinite, hideCursorHello 0s 4s forwards;
-  }
-
-  .name-text {
-    animation: typingName 3s steps(15) 4s forwards, blink 0.75s step-end infinite, hideCursorName 4s 6s forwards;
-  }
-}
-
-/* For smaller screens, remove animations */
-@media (max-width: 767px) {
-  .hello-text,
-  .name-text {
-    animation: none;
-    width: auto;
-    border-right: none;
-  }
-  .hero-text h2{
-    font-family: ui-serif;
-    white-space: normal;
-    font-size: 3rem !important;
-    font-weight: 450;
-    line-height: 1.3;
-    color: #303030;
-  }
+.sidebar.close + .home{
+  left: 90px;
+  width:calc(100% - 90px);
 }
