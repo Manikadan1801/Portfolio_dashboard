@@ -352,10 +352,62 @@ body.dark .switch::before{
 }
 
 
+@media (max-width: 800px){
+.sidebar{
+  top: unset;
+  right: unset;
+  bottom: 0;
+  height: 80px;
+  width: 100vw;
+  flex-direction: row;
+}
+.sidebar .toggle, .botton-content,.sidebar .image-text, .sidebar .text{
+  display: none !important;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar .menu-bar{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menu-bar .menu-links{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  align-items: center;
+}
+
+.menu-bar .menu-links li{
+  margin: 0;
+}
+
+.active{
+  width: 90px;
+  height: 90px !important;
+  border-radius: 50px;
+  transition: var(--tran-03);
+  background: var(--background-color);
+}
+.active a{
+  display:flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: var(--tran-03);
+}
+.active a .icon{
+  font-size: 30px;
+  transition: var(--tran-03);
+}
+
+}
 /* Tab bar ended */
 
 .container{
-  width: 900px;
+  /* width: 900px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
