@@ -30,16 +30,20 @@ modeSwitch.addEventListener('click', () => {
 }
 
 // Add active class to the clicked link and remove from others
-navLinks.forEach(link => {
-    console.log(link);
-    link.addEventListener('click', () => {
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-    });
-});
+
+function setActiveLink(link1) {
+    navLinks.forEach(link => {  
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+        link1.classList.add('active');
+    });  
+}
 
 
 // when screen loaded calling the mode change
 window.addEventListener('load', () => {
     modeChange();
+    setActiveLink(navLinks [0]);
 });

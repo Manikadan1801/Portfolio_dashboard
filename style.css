@@ -37,7 +37,7 @@ body.dark{
   --background-color: #18191a;
   --sidebar-color:#242526;
   --toggle-color: #fff;
-  --text-color: #a1a1a1;
+  --text-color: #838383;
   --Light-main-text:#fff;
   --font-family: 'Poppins', sans-serif;
  --border-color:#383838;
@@ -150,11 +150,13 @@ header .image-text .header-text {
 }
 
 .header-text .name{
-  font-weight:800;
+  font-weight:500;
+  font-size: 20px;
+  margin-bottom: -2px !important;
 }
 
 .header-text .profession{
-  margin-top: -2px;
+  margin: -2px 0 0 3px !important;
   font-size: 14px;
 }
 
@@ -360,6 +362,7 @@ body.dark .switch::before{
   height: 80px;
   width: 100vw;
   flex-direction: row;
+  box-shadow: #0000003f 0px 0px 25px 20px
 }
 .sidebar .toggle, .botton-content,.sidebar .image-text, .sidebar .text{
   display: none !important;
@@ -386,11 +389,11 @@ body.dark .switch::before{
 }
 
 .active{
-  width: 90px;
-  height: 90px !important;
-  border-radius: 50px;
-  transition: var(--tran-03);
-  background: var(--background-color);
+  height: 60px !important;
+  transition: var(--tran-02);
+  border-radius: 7px;
+  background: var(--background-color) !important;
+  box-shadow: #8383831c 0px 0px 15px 5px
 }
 .active a{
   display:flex !important;
@@ -407,7 +410,7 @@ body.dark .switch::before{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
+  width: 90vw;
   left: 20px;
   top: -10px;
   padding: 0;
@@ -428,7 +431,7 @@ body.dark .switch::before{
 }
 
 .container p {
-width: 100% !important;
+  width: 100% !important;
   font-size: 1rem !important;
   margin-top: 20px !important;
 }
@@ -436,29 +439,30 @@ width: 100% !important;
 /* Tab bar ended */
 
 .container{
-  /* width: 900px; */
+  width: 850px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-self: center;
-  margin: 0 auto;
+  margin: 50px auto auto auto ;
   height: 100%;
   padding: 0 .5rem;
   transition: var(--tran-05);
 }
 
-.container h2{ 
+.container .intro-text h2{ 
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 600;
+  line-height: 1.2;
   color: var(--Light-main-text);
 }
 .container h2 span{
   color: var(--text-color);
 }
-.container p{
+.container .intro-text p{
   width: 80%;
-  font-size: 1.2rem;
+  font-size: .9rem;
   font-weight: 400;
   color: var(--text-color);
   margin-top: 10px;
@@ -482,3 +486,66 @@ width: 100% !important;
   border: var(--border-color) 1px solid;
 }
 
+.container .projects{
+  flex-wrap: wrap;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 4rem 0 2rem 0;
+  width: 100%;
+}
+
+.container .projects h2{
+  width: 100%;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  color: var(--Light-main-text);
+}
+
+.container .projects .project-1{
+  display: flex;
+  flex: 1 1 48%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--sidebar-color);
+  border: var(--border-color) 1px solid;
+  transition: var(--tran-03);
+}
+.project-1 .project-img{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 0;
+}
+
+.project-1 .project-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-text{
+  padding: 1.5rem;
+}
+
+.project-text p{
+  font-size: .9rem;
+  font-weight: 400 !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.project-text h3{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 400 !important;
+  color: var(--Light-main-text);
+}
