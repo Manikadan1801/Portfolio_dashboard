@@ -554,7 +554,7 @@ body.dark .switch::before{
 }
 
 .footer-text{
-  border: var(--secondary-color) 1px solid;
+  border: var(--border-color) 1px solid;
   padding: 1.5rem;
   color: var(--text-color);
   flex-direction: row !important;
@@ -563,6 +563,7 @@ body.dark .switch::before{
 
 /* blog */
 #blog{
+  margin-top: 10rem ;
   color: var(--text-color) !important;
 }
 #blog p{
@@ -579,7 +580,7 @@ body.dark .switch::before{
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-top: 2rem;
+
 }
 
 #blog h3{
