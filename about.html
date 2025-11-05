@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — Manikandan Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Projects/day-1.jpg" type="image">
+  <script src="https://kit.fontawesome.com/09c72205cf.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="images/contact.png" alt="">
+        </span>
+        <div class="text header-text">
+          <span class="name">Manikandan</span>
+          <span class="profession">Visual Designer</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-links home-link">
+            <a href="index.html">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-links projects-link">
+            <a href="projects.html">
+              <i class='bx bx-pencil icon'></i>
+              <span class="text nav-text">Projects</span>
+            </a>
+          </li>
+
+          <li class="nav-links post-link">
+            <a href="blog.html">
+              <i class='bx bx-book-open icon'></i>
+              <span class="text nav-text">Post</span>
+            </a>
+          </li>
+
+          <li class="nav-links softwares-link">
+            <a href="softwares.html">
+              <i class='bx bx-cog icon'></i>
+              <span class="text nav-text">Softwares</span>
+            </a>
+          </li>
+
+          <li class="nav-links abouts-link active">
+            <a href="about.html">
+              <i class="fa-regular fa-user icon"></i>
+              <span class="text nav-text">Abouts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="botton-content">
+        <li class="mode">
+          <div class="moon-sun">
+            <i class='bx bx-moon moon icon'></i>
+            <i class='bx bx-sun sun icon'></i>
+          </div>
+          <span class="mode-text text">Light mode</span>
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="about-header">
+        <h1>Hi, I'm Manikandan </h1>
+        <p class="subtitle">Creative Visual Designer at <strong>Zoho Corporation</strong> — marketing & brand storytelling for <strong>Site24x7</strong>.</p>
+      </div>
+
+      <div class="about-container">
+        <aside class="profile-card fade-in" id="profileCard">
+          <div class="profile-img">
+            <img src="images/contact.png" alt="Manikandan profile">
+          </div>
+          <h3>Manikandan</h3>
+          <p class="role">Creative Visual Designer</p>
+          <p class="mini">Zoho Corporation — Site24x7</p>
+          <button class="contact-btn" id="contactBtn" type="button" aria-expanded="false">Contact</button>
+
+          <form id="contactForm" class="contact-form" aria-hidden="true">
+            <label for="contactName">Name</label>
+            <input id="contactName" name="name" type="text" required placeholder="Your name">
+
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" required placeholder="you@email.com">
+
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="4" required placeholder="Write a short message..."></textarea>
+
+            <div class="form-actions">
+              <button id="sendBtn" type="submit" class="contact-send">Send</button>
+              <button id="cancelBtn" type="button" class="contact-cancel">Cancel</button>
+            </div>
+            <p id="contactNotice" class="contact-notice" aria-live="polite"></p>
+          </form>
+        </aside>
+
+        <!-- Confirmation modal -->
+        <div id="confirmModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="modal-content">
+            <h3>Ready to send?</h3>
+            <p id="modalText">Your email client will open allowing you to send the message to <strong>manids1801@gmail.com</strong>.</p>
+            <div class="modal-actions">
+              <button id="modalProceed" class="contact-send">Proceed</button>
+              <button id="modalClose" class="contact-cancel">Close</button>
+            </div>
+          </div>
+        </div>
+
+        <main class="bio-card slide-up">
+          <h2>About</h2>
+          <p class="lead">I'm a Creative Visual Designer at Zoho Corporation, specializing in the marketing and brand storytelling for Site24x7.</p>
+
+          <p>My core focus is on driving engagement and growth through high-impact visuals. I transform technical features into compelling campaigns, designing everything from blog banners, social media posters, and infographics to web collateral that speaks directly to our audience.</p>
+
+          <p>My unique foundation comes from the <strong>Zoho Schools of Learning</strong>, which instilled in me not just design principles, but a deep, practical understanding of the software industry. This means I can quickly translate complex product ideas into clear, marketable, and visually stunning assets.</p>
+
+          <p>I love bridging the gap between engineering excellence and beautiful communication. Take a look at how I help make Site24x7 stand out!</p>
+
+          <div class="strengths">
+            <h4>Key Strengths</h4>
+            <ul>
+              <li><strong>Marketing Focus:</strong> Posters, banners, and blog visuals.</li>
+              <li><strong>Impact:</strong> High-impact campaigns and brand storytelling.</li>
+              <li><strong>Unique Background:</strong> Zoho Schools of Learning — product-minded design.</li>
+            </ul>
+          </div>
+
+        </main>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="wrapper">
+    <div class="container footer-text">
+      <p>© 2025 Portfolio. All rights reserved.</p>
+      <p>Created by Manikandan</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

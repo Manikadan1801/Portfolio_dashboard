@@ -7,7 +7,7 @@
     <title>Manikandan Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/day-1.jpg" type="image">
+    <link rel="icon" href="images/Projects/day-1.jpg" type="image">
     <!-- box Icon -->
     <script src="https://kit.fontawesome.com/09c72205cf.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="sidebar">
+    <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="nav-links projects-link">
-                        <a href="#">
+                        <a href="projects.html">
                             <i class='bx bx-pencil icon'></i>
                             <span class="text nav-text">Projects</span>
                         </a>
@@ -58,13 +58,13 @@
                         </a>
                     </li>
                     <li class="nav-links softwares-link">
-                        <a href="#">
+                        <a href="softwares.html">
                             <i class='bx bx-cog icon'></i>
                             <span class="text nav-text">Softwares</span>
                         </a>
                     </li>
                     <li class="nav-links abouts-link">
-                        <a href="#">
+                        <a href="about.html">
                             <i class="fa-regular fa-user icon"></i>
                             <span class="text nav-text">Abouts</span>
                         </a>
@@ -90,112 +90,44 @@
     </nav>
 
     <section id="blog" class="wrapper">
-        <div class="blog-text home-wrpper container">
-            <div id="blog-intro" class="intro-sec mar-b-3">
-                <h1>Striking the Right Balance: <span>Simple vs Complex Images</span></h1>
-                <img src="images/blender-4 copy.png" alt="">
-                <p>In the world of advertising, visuals are everything. A single image can make or break a campaign,
-                    influencing whether someone scrolls past or stops to engage. When it comes to designing ad images,
-                    creators often face a key question: Should the image be simple and generic, or complex and packed
-                    with information?</p>
-                <p>Both approaches have their merits — but choosing the right one depends on your audience, message, and
-                    medium.</p>
-
+        <div class="blog-grid container">
+            <div class="blog-card">
+                <div class="blog-thumbnail">
+                    <img src="images/blender-4 copy.png" alt="Blog thumbnail">
+                </div>
+                <div class="blog-info">
+                    <h2>Striking the Right Balance: Simple vs Complex Images</h2>
+                    <span class="blog-date">November 5, 2025</span>
+                    <p>In the world of advertising, visuals are everything. A single image can make or break a campaign,
+                        influencing whether someone scrolls past or stops to engage...</p>
+                    <a href="blogs/design-balance.html" class="blog-link">Read More</a>
+                </div>
             </div>
 
-            <div class="blog-content mar-b-3 ">
-                <h2>The Case for Simplicity</h2>
-                <p>Simple ad images are clean, uncluttered, and often use minimal elements to communicate a single,
-                    clear
-                    idea. Think of a sleek photo of a product with a short tagline and a call to action.</p>
-                <h3>Pros:<h3>
-                        <ul>
-                            <li><strong>Easy to digest:</strong> In fast-scrolling environments like social media, users
-                                only
-                                have a
-                                second or two to process visual content. A simple image can quickly communicate value.
-                            </li>
-                            <li><strong>Versatile:</strong> Generic imagery can be adapted across platforms and
-                                campaigns.</li>
-                            <li><strong>Brand-focused:</strong> Minimalist designs help reinforce brand identity without
-                                overwhelming the viewer.</li>
-                        </ul>
-
-                        <p><strong>Example:</strong> Apple’s iconic product ads — often just a product on a white
-                            background —
-                            convey elegance, focus, and clarity.</p>
-
+            <div class="blog-card">
+                <div class="blog-thumbnail">
+                    <img src="images/day-1.jpg" alt="Blog thumbnail">
+                </div>
+                <div class="blog-info">
+                    <h2>The Evolution of Web Design Trends in 2025</h2>
+                    <span class="blog-date">November 3, 2025</span>
+                    <p>Exploring the latest trends in web design and how they're shaping the digital landscape...</p>
+                    <a href="blogs/web-design-trends.html" class="blog-link">Read More</a>
+                </div>
             </div>
 
-            <div class="mar-b-3">
-                <h2>The Case for Complexity</h2>
-                <p>On the other hand, complex images try to tell the whole story at once. They include multiple elements
-                    —
-                    product details, features, lifestyle shots, text overlays, and sometimes even infographics.</p>
-
-                <h3>Pros:<h3>
-                        <ul>
-                            <li><strong>Informative:</strong> These visuals can showcase a product’s full value and
-                                answer
-                                questions
-                                right away.</li>
-                            <li><strong>Engaging:</strong> When done well, they can pull the viewer in for a longer
-                                look.</li>
-                            <li><strong>Ideal for specific platforms:</strong> In print, email, or landing pages — where
-                                users
-                                are
-                                more willing to pause and read — a more detailed approach works better.</li>
-                        </ul>
-
-                        <p><strong>Example:</strong> A real estate ad showing interior photos, amenities, location map,
-                            and
-                            price
-                            all in one graphic — a one-stop visual pitch.</p>
+            <div class="blog-card">
+                <div class="blog-thumbnail">
+                    <img src="images/contact.png" alt="Blog thumbnail">
+                </div>
+                <div class="blog-info">
+                    <h2>Visual Design Best Practices</h2>
+                    <span class="blog-date">October 30, 2025</span>
+                    <p>A comprehensive guide to creating visually appealing and effective designs for modern platforms...</p>
+                    <a href="blogs/design-practices.html" class="blog-link">Read More</a>
+                </div>
             </div>
-
-            <div class="mar-b-3">
-                <h2>So, Which One Wins?</h2>
-
-                <p>There’s no one-size-fits-all answer. Here's a quick guide:</p>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Scenario</th>
-                            <th>Best Choice</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Social media ads (scroll-heavy)</td>
-                            <td>Simple &amp; bold</td>
-                        </tr>
-                        <tr>
-                            <td>Print or brochure ads</td>
-                            <td>Complex &amp; detailed</td>
-                        </tr>
-                        <tr>
-                            <td>Retargeting campaigns</td>
-                            <td>Simple, focused</td>
-                        </tr>
-                        <tr>
-                            <td>Educational/technical products</td>
-                            <td>Detailed visuals</td>
-                        </tr>
-                    </tbody>
-                </table>
-
             </div>
-
-            <div class="mar-b-3">
-                <h2>Final Thoughts</h2>
-                <p>In advertising, clarity is key. Whether you go with a minimalist visual or an all-in-one graphic,
-                    make
-                    sure your core message doesn’t get lost. A simple image can spark curiosity, while a complex one can
-                    provide context — the best ad campaigns often find a smart balance between the two.</p>
-
-            </div>
-
         </div>
     </section>
     <footer class="wrapper">

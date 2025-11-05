@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Manikandan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Projects/day-1.jpg" type="image">
+    <script src="https://kit.fontawesome.com/09c72205cf.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="images/contact.png" alt="">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Manikandan</span>
+                    <span class="profession">Visual Designer</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-links projects-link active">
+                        <a href="projects.html">
+                            <i class='bx bx-pencil icon'></i>
+                            <span class="text nav-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-links post-link">
+                        <a href="blog.html">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">Post</span>
+                        </a>
+                    </li>
+                    <li class="nav-links softwares-link">
+                        <a href="softwares.html">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Softwares</span>
+                        </a>
+                    </li>
+                    <li class="nav-links abouts-link">
+                        <a href="about.html">
+                            <i class="fa-regular fa-user icon"></i>
+                            <span class="text nav-text">Abouts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="botton-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon moon icon'></i>
+                        <i class='bx bx-sun sun icon'></i>
+                    </div>
+                    <span class="mode-text text">Light mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="container">
+            <div class="project-header">
+                <h1>My <span>Projects</span></h1>
+                <p>Explore my creative work and designs</p>
+            </div>
+            
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="3d">3D Design</button>
+                <button class="filter-btn" data-filter="illustration">Illustration</button>
+            </div>
+
+            <div class="project-gallery">
+                <!-- Blender/3D Projects -->
+                <div class="gallery-item blender" data-category="3d">
+                    <img src="images/Projects/blender-1.png" alt="3D Visualization">
+                    <div class="item-overlay">
+                        <h3>3D Visualization</h3>
+                        <p>Blender render project</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item blender" data-category="3d">
+                    <img src="images/Projects/blender-2.png" alt="3D Modeling">
+                    <div class="item-overlay">
+                        <h3>3D Modeling</h3>
+                        <p>Character model in Blender</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item blender" data-category="3d">
+                    <img src="images/Projects/blender-5.jpg" alt="Product Design">
+                    <div class="item-overlay">
+                        <h3>Product Design</h3>
+                        <p>3D product visualization</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- UI/UX Projects -->
+                <div class="gallery-item ui" data-category="ui">
+                    <img src="images/Projects/day-1.jpg" alt="UI Design">
+                    <div class="item-overlay">
+                        <h3>UI Design</h3>
+                        <p>Modern interface concept</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item ui" data-category="ui">
+                    <img src="images/Projects/day-2.jpg" alt="Web Interface">
+                    <div class="item-overlay">
+                        <h3>Web Interface</h3>
+                        <p>Clean web design concept</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item ui" data-category="ui">
+                    <img src="images/Projects/day-3.jpg" alt="Dashboard Design">
+                    <div class="item-overlay">
+                        <h3>Dashboard Design</h3>
+                        <p>Analytics interface concept</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Social Media Designs -->
+                <div class="gallery-item social" data-category="social">
+                    <img src="images/Projects/social-media-1.jpg" alt="Social Post Design">
+                    <div class="item-overlay">
+                        <h3>Social Post Design</h3>
+                        <p>Engaging social media content</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item social" data-category="social">
+                    <img src="images/Projects/social-media-10.jpg" alt="Brand Campaign">
+                    <div class="item-overlay">
+                        <h3>Brand Campaign</h3>
+                        <p>Social media marketing</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item social" data-category="social">
+                    <img src="images/Projects/social-media-15.jpg" alt="Social Strategy">
+                    <div class="item-overlay">
+                        <h3>Social Strategy</h3>
+                        <p>Visual marketing campaign</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Illustration Work -->
+                <div class="gallery-item illustration" data-category="illustration">
+                    <img src="images/Projects/charater-comic.png" alt="Character Design">
+                    <div class="item-overlay">
+                        <h3>Character Design</h3>
+                        <p>Comic style illustration</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- More Social Media Content -->
+                <div class="gallery-item social" data-category="social">
+                    <img src="images/Projects/social-media-20.jpg" alt="Brand Post">
+                    <div class="item-overlay">
+                        <h3>Brand Post</h3>
+                        <p>Social media content design</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item social" data-category="social">
+                    <img src="images/Projects/social-media-25.jpg" alt="Campaign Design">
+                    <div class="item-overlay">
+                        <h3>Campaign Design</h3>
+                        <p>Digital marketing assets</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- More UI/UX -->
+                <div class="gallery-item ui" data-category="ui">
+                    <img src="images/Projects/day-4.jpg" alt="App Interface">
+                    <div class="item-overlay">
+                        <h3>App Interface</h3>
+                        <p>Mobile app design concept</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- More 3D Work -->
+                <div class="gallery-item blender" data-category="3d">
+                    <img src="images/Projects/blender-7.jpg" alt="3D Environment">
+                    <div class="item-overlay">
+                        <h3>3D Environment</h3>
+                        <p>Environmental visualization</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item blender" data-category="3d">
+                    <img src="images/Projects/blender-8.jpg" alt="3D Scene">
+                    <div class="item-overlay">
+                        <h3>3D Scene</h3>
+                        <p>Scene composition and lighting</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="wrapper">
+        <div class="container footer-text">
+            <p>© 2025 Portfolio. All rights reserved.</p>
+            <p>Created by Manikandan</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
