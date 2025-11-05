@@ -490,7 +490,7 @@ body.dark .switch::before{
       display: flex;
       height: fit-content;
       /* padding: 20px 30px; */
-      margin: 0 0 0 auto;
+      margin: 0 auto;
       width: calc(100% - 250px);
       transition: var(--tran-05);
       justify-content: center !important;
